@@ -12,7 +12,6 @@ And simply with few lines, all the images stored in a folder. In order to use [S
 On my MacOs machine I have installed FFmpeg, and whith this is extremely simple to just convert all the pictrues to 512x512
 ```bash
 mkdir resized
-cd resized
 for filename in *.jpg; do ffmpeg -i "$filename" -y -vf scale=512:512 "resized/$filename";done
 ```
 once all the images are stored in the resized folder you can compress the folder and upload to your google drive. 
